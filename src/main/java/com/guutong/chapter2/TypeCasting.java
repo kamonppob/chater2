@@ -21,8 +21,6 @@ public class TypeCasting {
             System.out.println("output " + (int)input);
         }else{
              System.out.println("output " + input);
-    
         }
     }
-    
 }
