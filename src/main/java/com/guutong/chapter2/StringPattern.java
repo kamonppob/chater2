@@ -6,20 +6,15 @@
 
 package com.guutong.chapter2;
 
-import java.util.Scanner;
-/*
- *
+/**
  *
  * @author GuutonG
  */
-public class ShowEven {
+public class StringPattern {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        for(int i=1;i<=n;i++){
-                if (i%2==0){
-                    System.out.println(""+i);
-                }
-        }
+        String input = "1234-5647-890";
+        String split[] = input.split("-");
+        System.out.println(split[0]+","+split[1]+","+split[2]);
+        System.out.println(split[0].length()+","+split[1].length()+","+split[2].length());
     }
 }

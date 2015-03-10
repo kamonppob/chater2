@@ -6,20 +6,20 @@
 
 package com.guutong.chapter2;
 
-import java.util.Scanner;
-/*
- *
+/**
  *
  * @author GuutonG
  */
-public class ShowEven {
+public class MaxTest {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        for(int i=1;i<=n;i++){
-                if (i%2==0){
-                    System.out.println(""+i);
-                }
+        int [] numbers = {78,4545,1,54,5,985,98,847,8};
+        int max = numbers[0];
+        
+        for(int numb : numbers){
+            if(numb> max){
+            max = numb;
+            }
         }
+        System.out.println(max);
     }
 }
